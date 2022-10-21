@@ -12,12 +12,30 @@
     
     
     <item>
-      <title>Solid</title>
+      <title>Modules</title>
+      <link>http://example.org/posts/modules/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://example.org/posts/modules/</guid>
+      <description>Data Transfer Objects - Used for storing data and passing data between systems Entities - Represents a piece of a data that can be stored in the database</description>
+    </item>
+    
+    <item>
+      <title>The Solid Principles Of OOP Design</title>
       <link>http://example.org/posts/solid/</link>
       <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
       
       <guid>http://example.org/posts/solid/</guid>
-      <description></description>
+      <description>Single Responsibility Principle (SRP)
+A class should only have one and only one reason to change.
+Eg an application that takes a a collection of shapes, circles and squares
+and calculates the area of all the shapes in the collection.
+class Square
+{ public $length;
+public function construct($length) { $this-&amp;gt;length = $length; }  }
+class Circle
+{ public $radius;
+public function construct($radius) { $this-&amp;gt;radius = $radius; }  }</description>
     </item>
     
   </channel>

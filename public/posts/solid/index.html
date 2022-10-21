@@ -4,9 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Solid | JohnDev</title>
+    <title>The Solid Principles Of OOP Design | JohnDev</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Single Responsibility Principle (SRP)
+A class should only have one and only one reason to change.
+Eg an application that takes a a collection of shapes, circles and squares
+and calculates the area of all the shapes in the collection.
+class Square
+{ public $length;
+public function construct($length) { $this-&gt;length = $length; }  }
+class Circle
+{ public $radius;
+public function construct($radius) { $this-&gt;radius = $radius; }  }">
     <meta name="generator" content="Hugo 0.68.3" />
     
     
@@ -29,23 +38,50 @@
 
     
     
-    <meta property="og:title" content="Solid" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="The Solid Principles Of OOP Design" />
+<meta property="og:description" content="Single Responsibility Principle (SRP)
+A class should only have one and only one reason to change.
+Eg an application that takes a a collection of shapes, circles and squares
+and calculates the area of all the shapes in the collection.
+class Square
+{ public $length;
+public function construct($length) { $this-&gt;length = $length; }  }
+class Circle
+{ public $radius;
+public function construct($radius) { $this-&gt;radius = $radius; }  }" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://example.org/posts/solid/" />
 <meta property="article:published_time" content="2022-10-18T16:56:59+13:00" />
 <meta property="article:modified_time" content="2022-10-18T16:56:59+13:00" />
-<meta itemprop="name" content="Solid">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="The Solid Principles Of OOP Design">
+<meta itemprop="description" content="Single Responsibility Principle (SRP)
+A class should only have one and only one reason to change.
+Eg an application that takes a a collection of shapes, circles and squares
+and calculates the area of all the shapes in the collection.
+class Square
+{ public $length;
+public function construct($length) { $this-&gt;length = $length; }  }
+class Circle
+{ public $radius;
+public function construct($radius) { $this-&gt;radius = $radius; }  }">
 <meta itemprop="datePublished" content="2022-10-18T16:56:59&#43;13:00" />
 <meta itemprop="dateModified" content="2022-10-18T16:56:59&#43;13:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="1149">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Solid"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="The Solid Principles Of OOP Design"/>
+<meta name="twitter:description" content="Single Responsibility Principle (SRP)
+A class should only have one and only one reason to change.
+Eg an application that takes a a collection of shapes, circles and squares
+and calculates the area of all the shapes in the collection.
+class Square
+{ public $length;
+public function construct($length) { $this-&gt;length = $length; }  }
+class Circle
+{ public $radius;
+public function construct($radius) { $this-&gt;radius = $radius; }  }"/>
 
 	
   </head>
@@ -82,7 +118,7 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Solid</h1>
+      <h1 class="f1 athelas mt3 mb1">The Solid Principles Of OOP Design</h1>
       
       
       
@@ -92,7 +128,284 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Single Responsibility Principle (SRP)</p>
+<p>A class should only have one and only one reason to change.</p>
+<p>Eg an application that takes a a collection of shapes, circles and squares</p>
+<p>and calculates the area of all the shapes in the collection.</p>
+<p>class Square</p>
+<p>{
+public $length;</p>
+<pre><code>public function construct($length)
+{
+    $this-&gt;length = $length;
+}
+</code></pre>
+<p>}</p>
+<p>class Circle</p>
+<p>{
+public $radius;</p>
+<pre><code>public function construct($radius)
+{
+    $this-&gt;radius = $radius;
+}
+</code></pre>
+<p>}</p>
+<p>lass AreaCalculator
+{
+protected $shapes;</p>
+<pre><code>public function __construct($shapes = [])
+{
+    $this-&gt;shapes = $shapes;
+}
+
+public function sum()
+{
+    foreach ($this-&gt;shapes as $shape) {
+        if (is_a($shape, 'Square')) {
+            $area[] = pow($shape-&gt;length, 2);
+        } elseif (is_a($shape, 'Circle')) {
+            $area[] = pi() * pow($shape-&gt;radius, 2);
+        }
+    }
+
+    return array_sum($area);
+}
+
+public function output()
+{
+    return implode('', [
+      '',
+          'Sum of the areas of provided shapes: ',
+          $this-&gt;sum(),
+      '',
+  ]);
+}
+</code></pre>
+<p>$shapes = [
+new Circle(2),
+new Square(5),
+new Square(6),
+];</p>
+<p>$areas = new AreaCalculator($shapes);</p>
+<p>echo $areas-&gt;output();</p>
+<p>The problem is the output method handles logic to output to the data.</p>
+<p>if the ouput needed to be json the area calculator should not have to worry about it.
+Violates(SRP)</p>
+<p>public function JSON()</p>
+<pre><code>{
+    $data = [
+      'sum' =&gt; $this-&gt;calculator-&gt;sum(),
+  ];
+
+    return json_encode($data);
+}
+
+public function HTML()
+{
+    return implode('', [
+      '',
+          'Sum of the areas of provided shapes: ',
+          $this-&gt;calculator-&gt;sum(),
+      '',
+  ]);
+}
+</code></pre>
+<p>To address this, you can create a separate SumCalculatorOutputter class and use that new class to handle the logic you need to output the data to the user:</p>
+<p>$shapes = [</p>
+<p>new Circle(2),
+new Square(5),
+new Square(6),
+];</p>
+<p>$areas = new AreaCalculator($shapes);
+$output = new SumCalculatorOutputter($areas);</p>
+<p>echo $output-&gt;JSON();
+echo $output-&gt;HTML();</p>
+<p>Open-Closed Principle</p>
+<p>Open-closed Principle (OCP) states:</p>
+<p>Objects or entities should be open for extension but closed for modification.</p>
+<p>This means that a class should be extendable without modifying the class itself.</p>
+<p>Building off the example AreaCalculator class,</p>
+<p>consider a new VolumeCalculator class that extends the AreaCalculator class:</p>
+<p>refer to the area calculator example above</p>
+<p>Consider a scenario where the user would like the sum of additional shapes like triangles, pentagons, hexagons, etc. You would have to constantly edit this file and add more if/else blocks. That would violate the open-closed principle.</p>
+<p>A way you can make this sum method better is to remove the logic to calculate the area of each shape out of the AreaCalculator class method and attach it to each shape’s class.</p>
+<p>class Square
+{
+public $length;</p>
+<pre><code>public function __construct($length)
+{
+    $this-&gt;length = $length;
+}
+
+public function area()
+{
+    return pow($this-&gt;length, 2);
+}
+</code></pre>
+<p>}</p>
+<p>However, another problem arises. How do you know that the object passed into the AreaCalculator is actually a shape or if the shape has a method named area?</p>
+<p>Coding to an interface is an integral part of SOLID.</p>
+<p>Create a ShapeInterface that supports area:</p>
+<p>interface ShapeInterface
+{
+public function area();
+}</p>
+<p>class Square implements ShapeInterface
+{
+// &hellip;
+}</p>
+<p>class AreaCalculator
+{
+// &hellip;</p>
+<pre><code>public function sum()
+{
+    foreach ($this-&gt;shapes as $shape) {
+        if (is_a($shape, 'ShapeInterface')) {
+            $area[] = $shape-&gt;area();
+            continue;
+        }
+
+        throw new AreaCalculatorInvalidShapeException();
+    }
+
+    return array_sum($area);
+}
+</code></pre>
+<p>}</p>
+<p>Liskov Substitution Principle</p>
+<p>Liskov Substitution Principle states:</p>
+<p>Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.</p>
+<p>This means that every subclass or derived class should be substitutable for their base or parent class.</p>
+<p>Building off the example AreaCalculator class, consider a new VolumeCalculator class that extends the AreaCalculator class:</p>
+<p>class VolumeCalculator extends AreaCalculator</p>
+<p>{
+public function construct($shapes = [])
+{
+parent::construct($shapes);
+}</p>
+<pre><code>public function sum()
+{
+    // logic to calculate the volumes and then return an array of output
+    return [$summedData];
+}
+</code></pre>
+<p>}</p>
+<p>class SumCalculatorOutputter {
+protected $calculator;</p>
+<pre><code>public function __constructor(AreaCalculator $calculator) {
+    $this-&gt;calculator = $calculator;
+}
+
+public function JSON() {
+    $data = array(
+        'sum' =&gt; $this-&gt;calculator-&gt;sum();
+    );
+
+    return json_encode($data);
+}
+
+public function HTML() {
+    return implode('', array(
+        '',
+            'Sum of the areas of provided shapes: ',
+            $this-&gt;calculator-&gt;sum(),
+        ''
+    ));
+}
+</code></pre>
+<p>}</p>
+<p>$areas = new AreaCalculator($shapes);
+$volumes = new VolumeCalculator($solidShapes);</p>
+<p>$output = new SumCalculatorOutputter($areas);
+$output2 = new SumCalculatorOutputter($volumes);</p>
+<p>When you call the HTML method on the $output2 object, you will get an E_NOTICE error informing you of an array to string conversion.</p>
+<p>To fix this, instead of returning an array from the VolumeCalculator class sum method, return $summedData:</p>
+<p>That satisfies the Liskov substitution principle.</p>
+<p><a href="https://medium.com/@learnstuff.io/liskov-substitution-principle-ad0d6a51ffb0">https://medium.com/@learnstuff.io/liskov-substitution-principle-ad0d6a51ffb0</a></p>
+<p>states that a hierarchy of classes should be designed in such a way that if we were to replace the parent class with one of its children the code will still work as expected. </p>
+<p> This means that changes to children code should not modify the intended, logical actions of a class in such a way that the expected functionality is no longer supported. Another way of looking at this principle is that classes in a hierarchy should not stray too far from the original purpose of the parent class.</p>
+<p>Interface Segregation Principle (isp)</p>
+<p>A client should never be forced to implement an interface that it doesnt use, or clients</p>
+<p>should not be forced to depend on methods they do not use.</p>
+<p>Interface ShapeInterface {</p>
+<p>public function area();</p>
+<p>public fucntion volume();</p>
+<p>}</p>
+<p>any shape must implement the the volume method</p>
+<p>squares are flat shapes and dont have volumes</p>
+<p>this would force the square class to implement a method it has no use for.</p>
+<p>This would violate the the inteface segregation principle instead you could
+create another inteface called the ThreeDimensionalShapeInteface</p>
+<p>that has the volume contract and three dimensiaonal shapes can implement this invoice</p>
+<p>interface ShapeInterface
+{
+public function area();
+}</p>
+<p>interface ThreeDimensionalShapeInterface
+{
+public function volume();
+}</p>
+<p>class Cuboid implements ShapeInterface, ThreeDimensionalShapeInterface
+{
+public function area()
+{
+// calculate the surface area of the cuboid
+}</p>
+<pre><code>public function volume()
+{
+    // calculate the volume of the cuboid
+}
+</code></pre>
+<p>}</p>
+<p>Dependancy Inversion Principle (Dip)</p>
+<p>Entities must depend on abstractions and not concretions. It states the high level module must not depend on the low-level module they should depened on abstractions</p>
+<p>This principle allows for decoupling</p>
+<p>class MySQLConnection
+//Low Level</p>
+<p>{
+public function connect()
+{
+// handle the database connection
+return &lsquo;Database connection&rsquo;;
+}
+}</p>
+<p>//High Level</p>
+<p>class PasswordReminder
+{
+private $dbConnection;</p>
+<pre><code>public function __construct(MySQLConnection $dbConnection)
+{
+    $this-&gt;dbConnection = $dbConnection;
+}
+</code></pre>
+<p>}</p>
+<p>if you wanted to change the db class you have to later edit the password reminder class</p>
+<p>(violates OSP)</p>
+<p>interface DBConnectionInterface
+{
+public function connect();
+}</p>
+<p>class MySQLConnection implements DBConnectionInterface
+{
+public function connect()
+{
+// handle the database connection
+return &lsquo;Database connection&rsquo;;
+}
+}</p>
+<p>class PasswordReminder
+{
+private $dbConnection;</p>
+<pre><code>public function __construct(DBConnectionInterface $dbConnection)
+{
+    $this-&gt;dbConnection = $dbConnection;
+}
+</code></pre>
+<p>}</p>
+<p>The interface has a connect method and the MySQLConnection class implements this interface.</p>
+<p>Also, instead of directly type-hinting MySQLConnection class in the constructor of the PasswordReminder, you instead type-hint the DBConnectionInterface and no matter the type of database your application uses, the PasswordReminder class can connect to the database without any problems and open-close principle is not violated.</p>
+<p><a href="https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#interface-segregation-principle">https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#interface-segregation-principle</a></p>
+<ul class="pa0">
   
 </ul>
 <div class="mt6 instapaper_ignoref">
