@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://johndev.onrender.com/</loc>
     <lastmod>2022-10-18T16:56:59+13:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/modules/</loc>
+    <loc>http://johndev.onrender.com/posts/modules/</loc>
     <lastmod>2022-10-18T16:56:59+13:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>http://johndev.onrender.com/posts/</loc>
     <lastmod>2022-10-18T16:56:59+13:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/solid/</loc>
+    <loc>http://johndev.onrender.com/posts/solid/</loc>
     <lastmod>2022-10-18T16:56:59+13:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://johndev.onrender.com/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://johndev.onrender.com/tags/</loc>
   </url>
   
 </urlset>

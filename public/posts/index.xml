@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on JohnDev</title>
-    <link>http://example.org/posts/</link>
+    <link>http://johndev.onrender.com/posts/</link>
     <description>Recent content in Posts on JohnDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Oct 2022 16:56:59 +1300</lastBuildDate>
     
-	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://johndev.onrender.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Modules In EzyVet</title>
-      <link>http://example.org/posts/modules/</link>
+      <link>http://johndev.onrender.com/posts/modules/</link>
       <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
       
-      <guid>http://example.org/posts/modules/</guid>
+      <guid>http://johndev.onrender.com/posts/modules/</guid>
       <description>Data Transfer Objects  Used for storing data and passing data between systems  Entities  Represents a piece of a data that can be stored in the database  Request -&amp;gt; DTO Mapping  As soon as a request is received for a post or a patch request it will be validated using the Laravel request validation  </description>
     </item>
     
     <item>
       <title>The Solid Principles Of OOP Design</title>
-      <link>http://example.org/posts/solid/</link>
+      <link>http://johndev.onrender.com/posts/solid/</link>
       <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
       
-      <guid>http://example.org/posts/solid/</guid>
+      <guid>http://johndev.onrender.com/posts/solid/</guid>
       <description>Single Responsibility Principle (SRP) A class should only have one and only one reason to change.
 Open-Closed Principle Objects or entities should be open for extension but closed for modification.
 This means that a class should be extendable without modifying the class itself.
