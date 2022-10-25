@@ -1,7 +1,7 @@
 {{ define "main" }}
     <main aria-role="main">
       <header class="homepage-header">
-        <h1>{{.Title}}</h1>
+        <h1>Posts</h1>
         {{ with .Params.subtitle }}
         <span class="subtitle">{{.}}</span>
         {{ end }}
@@ -14,7 +14,7 @@
         <ul>
           {{ range first 10 .Site.RegularPages }}
           <li>           
-            <div class="meta"> <a href="{{ .Permalink }}">{{ .Title }}</a>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+            <div class="meta"> <a href="{{ .Permalink }}">{{ .Title }}</a><span> - {{ .Date.Format "Mon, Jan 2, 2006" }}</span></div>
           </li>
           {{ end }}
         </ul>

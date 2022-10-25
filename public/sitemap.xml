@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://johndev.onrender.com/posts/cleancode/</loc>
+    <lastmod>2022-10-18T16:56:59+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://johndev.onrender.com/posts/computationalthinking/</loc>
+    <lastmod>2022-10-18T16:56:59+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://johndev.onrender.com/posts/criticalthinking/</loc>
+    <lastmod>2022-10-18T16:56:59+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://johndev.onrender.com/posts/databasedesign/</loc>
+    <lastmod>2022-10-18T16:56:59+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://johndev.onrender.com/posts/designpatterns/</loc>
+    <lastmod>2022-10-18T16:56:59+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://johndev.onrender.com/</loc>
     <lastmod>2022-10-18T16:56:59+13:00</lastmod>
   </url>
   
   <url>
     <loc>http://johndev.onrender.com/posts/modules/</loc>
+    <lastmod>2022-10-18T16:56:59+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://johndev.onrender.com/posts/owasp/</loc>
     <lastmod>2022-10-18T16:56:59+13:00</lastmod>
   </url>
   

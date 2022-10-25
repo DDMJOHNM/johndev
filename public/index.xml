@@ -12,12 +12,71 @@
     
     
     <item>
+      <title>Clean Code</title>
+      <link>http://johndev.onrender.com/posts/cleancode/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/cleancode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computational Thinking</title>
+      <link>http://johndev.onrender.com/posts/computationalthinking/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/computationalthinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Critical Thinking</title>
+      <link>http://johndev.onrender.com/posts/criticalthinking/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/criticalthinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database Design</title>
+      <link>http://johndev.onrender.com/posts/databasedesign/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/databasedesign/</guid>
+      <description>Entity Relationship Models DBMS
+ data information knowledge intelligence (value of data)  From data to actionable insights
+File System Solution
+ Separated, isolated data and data duplication Dependancy on applications Incompatible files Lack of data sharing  Database Solution
+ A structure that contains data Organise data through entities, attributes, relationships Collection of programs that users interact with a database.  Popular DBMS
+ Microsoft Access MySql Progres MongoDb (NoSql)  Advantages</description>
+    </item>
+    
+    <item>
+      <title>Design Patterns</title>
+      <link>http://johndev.onrender.com/posts/designpatterns/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/designpatterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Modules In EzyVet</title>
       <link>http://johndev.onrender.com/posts/modules/</link>
       <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
       
       <guid>http://johndev.onrender.com/posts/modules/</guid>
       <description>Data Transfer Objects  Used for storing data and passing data between systems  Entities  Represents a piece of a data that can be stored in the database  Request -&amp;gt; DTO Mapping  As soon as a request is received for a post or a patch request it will be validated using the Laravel request validation  </description>
+    </item>
+    
+    <item>
+      <title>OWASP</title>
+      <link>http://johndev.onrender.com/posts/owasp/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/owasp/</guid>
+      <description></description>
     </item>
     
     <item>

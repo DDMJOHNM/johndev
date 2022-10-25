@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Database Design | JohnDev</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Entity Relationship Models DBMS
+ data information knowledge intelligence (value of data)  From data to actionable insights
+File System Solution
+ Separated, isolated data and data duplication Dependancy on applications Incompatible files Lack of data sharing  Database Solution
+ A structure that contains data Organise data through entities, attributes, relationships Collection of programs that users interact with a database.  Popular DBMS
+ Microsoft Access MySql Progres MongoDb (NoSql)  Advantages">
+    <meta name="generator" content="Hugo 0.68.3" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Database Design" />
+<meta property="og:description" content="Entity Relationship Models DBMS
+ data information knowledge intelligence (value of data)  From data to actionable insights
+File System Solution
+ Separated, isolated data and data duplication Dependancy on applications Incompatible files Lack of data sharing  Database Solution
+ A structure that contains data Organise data through entities, attributes, relationships Collection of programs that users interact with a database.  Popular DBMS
+ Microsoft Access MySql Progres MongoDb (NoSql)  Advantages" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://johndev.onrender.com/posts/databasedesign/" />
+<meta property="article:published_time" content="2022-10-18T16:56:59+13:00" />
+<meta property="article:modified_time" content="2022-10-18T16:56:59+13:00" />
+<meta itemprop="name" content="Database Design">
+<meta itemprop="description" content="Entity Relationship Models DBMS
+ data information knowledge intelligence (value of data)  From data to actionable insights
+File System Solution
+ Separated, isolated data and data duplication Dependancy on applications Incompatible files Lack of data sharing  Database Solution
+ A structure that contains data Organise data through entities, attributes, relationships Collection of programs that users interact with a database.  Popular DBMS
+ Microsoft Access MySql Progres MongoDb (NoSql)  Advantages">
+<meta itemprop="datePublished" content="2022-10-18T16:56:59&#43;13:00" />
+<meta itemprop="dateModified" content="2022-10-18T16:56:59&#43;13:00" />
+<meta itemprop="wordCount" content="148">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Database Design"/>
+<meta name="twitter:description" content="Entity Relationship Models DBMS
+ data information knowledge intelligence (value of data)  From data to actionable insights
+File System Solution
+ Separated, isolated data and data duplication Dependancy on applications Incompatible files Lack of data sharing  Database Solution
+ A structure that contains data Organise data through entities, attributes, relationships Collection of programs that users interact with a database.  Popular DBMS
+ Microsoft Access MySql Progres MongoDb (NoSql)  Advantages"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+   <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        JohnDev
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+ </header> 
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Database Design</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-10-18T16:56:59+13:00">October 18, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="entity-relationship-models">Entity Relationship Models</h2>
+<p>DBMS</p>
+<ul>
+<li>data</li>
+<li>information</li>
+<li>knowledge</li>
+<li>intelligence (value of data)</li>
+</ul>
+<p>From data to actionable insights</p>
+<p>File System Solution</p>
+<ul>
+<li>Separated, isolated data and data duplication</li>
+<li>Dependancy on applications</li>
+<li>Incompatible files</li>
+<li>Lack of data sharing</li>
+</ul>
+<p>Database Solution</p>
+<ul>
+<li>A structure that contains data</li>
+<li>Organise data through entities, attributes, relationships</li>
+<li>Collection of programs that users interact with a database.</li>
+</ul>
+<p>Popular DBMS</p>
+<ul>
+<li>Microsoft Access</li>
+<li>MySql</li>
+<li>Progres</li>
+<li>MongoDb (NoSql)</li>
+</ul>
+<p>Advantages</p>
+<ul>
+<li>more information from same amount of data</li>
+<li>share our data</li>
+<li>balancing conflicting requirements</li>
+<li>controlling redundacy</li>
+<li>consistency</li>
+<li>Referential integrity</li>
+<li>expanding security</li>
+<li>increasing productivity</li>
+<li>providing data independence.</li>
+</ul>
+<p>Disaadvantages</p>
+<ul>
+<li>Complex</li>
+<li>Greater Impact of Failure</li>
+<li>More differcult recovery</li>
+<li>Larger file size (Also structure, user and application)</li>
+</ul>
+<p>When is a DBMS not appropriate - when advantages outweigh disadvantages</p>
+<ul>
+<li>Database small with simple structure</li>
+<li>Applications are simple and relatively static</li>
+<li>Applications have real time requirements</li>
+<li>Concurrent, multi access to data not required</li>
+</ul>
+<p>Entities</p>
+<p>Attributes</p>
+<h2 id="relational-models">Relational Models</h2>
+<h2 id="normalization">Normalization</h2>
+<h2 id="case-study">Case Study</h2>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://johndev.onrender.com/" >
+    &copy;  JohnDev 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
