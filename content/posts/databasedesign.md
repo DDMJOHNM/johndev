@@ -77,6 +77,28 @@ Describes
 - Relationships among these entities : Instance - Object with values 
 - Identifiers : special attribute used to identify a specific instance of an entity - artificial or natural (Created)
 
+Relationship between two or more entities
+eg employees and companies 
+Domain knowledge consider answer in context
+employee multiple companies 
+degree of relations how many enities involved in the relationship
+- Unary or Recursive - (1)
+- Binary (2) - relational db cannot handle 
+
+Cardinality - number of instances involved in the relationship (max cardinality or multiplicity)
+- 1:n One to many
+- N:1 Many to one 
+- N:M Many to many 
+
+Participation - Manditory or Optional (Optionality or Minimal Cardinatilty)
+or require instance of entity here also there 
+
+Entity Relationship Models 
+
+Based on your understanding so far, what are the entities, attributes, identifiers, and relationships in the Entity Relationship Model? You can lay out the initial outline here, and the owner will meet with you to answer your questions.
+
+
+
 
 
 
