@@ -55,16 +55,32 @@ When is a DBMS not appropriate - when advantages outweigh disadvantages
 - Applications have real time requirements 
 - Concurrent, multi access to data not required  
 
+Contents of a DBMS
+
+User Data
+- tables, relationships
+- columns or row db structure
+
+Meta Data 
+- How to Describe the data 
+- System Tables 
+- Indexes access records without going through entire table 
+
+Applications Metadata 
+- Storage facility for forms 
+
+Design a Relational Database Model 
+Entity relationship model 
+Describes
+- Entities : class group abstract structure and no value (Object of Interest)
+- Attributes (Identifier) : Characteristics of an entity of interest 
+- Relationships among these entities : Instance - Object with values 
+- Identifiers : special attribute used to identify a specific instance of an entity - artificial or natural (Created)
 
 
 
 
 
-
-
-Entities
-
-Attributes
 
 
 
