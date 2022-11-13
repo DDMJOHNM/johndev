@@ -6,10 +6,41 @@
     <description>Recent content in Posts on JohnDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Oct 2022 16:56:59 +1300</lastBuildDate>
+    <lastBuildDate>Sun, 13 Nov 2022 16:56:59 +1300</lastBuildDate>
     
 	<atom:link href="http://johndev.onrender.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database Design</title>
+      <link>http://johndev.onrender.com/posts/databasedesign/</link>
+      <pubDate>Sun, 13 Nov 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/databasedesign/</guid>
+      <description>Entity Relationship Models DBMS
+ data information knowledge intelligence (value of data)  From data to actionable insights
+File System Solution
+ Separated, isolated data and data duplication Dependancy on applications Incompatible files Lack of data sharing  Database Solution
+ A structure that contains data Organise data through entities, attributes, relationships Collection of programs that users interact with a database.  Popular DBMS
+ Microsoft Access MySql Progres MongoDb (NoSql)  Advantages</description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>http://johndev.onrender.com/posts/kafka/</link>
+      <pubDate>Sun, 13 Nov 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/kafka/</guid>
+      <description>Journey to Event Driven Programming Neil Avery Blog Karl Waegner
+api to event driven architecture Event Atomic Relates to strean of events Have behavior in ecosystem
+Consideration In Event Driven Design
+Domain Driven Design
+never overwrite old data -&amp;gt; create current state
+Transactionality -&amp;gt; data hygene -&amp;gt; data validation -&amp;gt; dead letter queue (Schema Registry) db table insert fail -&amp;gt; data model
+Exceution
+Security
+Lineage Data Evolves Data will change Data Model In Db and get from git.</description>
+    </item>
     
     <item>
       <title>Clean Code</title>
@@ -36,20 +67,6 @@
       
       <guid>http://johndev.onrender.com/posts/criticalthinking/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Database Design</title>
-      <link>http://johndev.onrender.com/posts/databasedesign/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/databasedesign/</guid>
-      <description>Entity Relationship Models DBMS
- data information knowledge intelligence (value of data)  From data to actionable insights
-File System Solution
- Separated, isolated data and data duplication Dependancy on applications Incompatible files Lack of data sharing  Database Solution
- A structure that contains data Organise data through entities, attributes, relationships Collection of programs that users interact with a database.  Popular DBMS
- Microsoft Access MySql Progres MongoDb (NoSql)  Advantages</description>
     </item>
     
     <item>
