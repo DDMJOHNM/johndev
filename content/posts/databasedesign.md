@@ -1,6 +1,6 @@
 ---
 title: "Database Design"
-date: 2022-10-18T16:56:59+13:00
+date: 2022-11-13T16:56:59+13:00
 draft: false
 ---
 
@@ -100,6 +100,7 @@ Based on your understanding so far, what are the entities, attributes, identifie
 {{< figure src="/images/dbcourse1.jpg" title="Entity RelationShip Model Pizza Franchise" >}}
 
 
+Entity Relationship Diagram and Notation 
 
 
 
