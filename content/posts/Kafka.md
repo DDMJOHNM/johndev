@@ -83,4 +83,8 @@ Request Response -> Event Driven
 
 Published -> Topic -> Consumer (See things as they occur)
 Schema Registry -> Validation _.next person has resposibilty to react to it 
-(Sagas)
+(Sagas)(Immutable)
+Topic with different retention 
+kafka complementary to db
+db good for reporting 
+
