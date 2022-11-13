@@ -81,6 +81,6 @@ event sourcing
 
 Request Response -> Event Driven
 
-Published -> Topic -> Consumer (See things as they occurr)
-Schema Registry -> Validation 
+Published -> Topic -> Consumer (See things as they occur)
+Schema Registry -> Validation _.next person has resposibilty to react to it 
 (Sagas)
