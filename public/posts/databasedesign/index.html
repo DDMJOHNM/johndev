@@ -54,7 +54,7 @@ File System Solution
  Microsoft Access MySql Progres MongoDb (NoSql)  Advantages">
 <meta itemprop="datePublished" content="2022-10-18T16:56:59&#43;13:00" />
 <meta itemprop="dateModified" content="2022-10-18T16:56:59&#43;13:00" />
-<meta itemprop="wordCount" content="148">
+<meta itemprop="wordCount" content="367">
 
 
 
@@ -190,8 +190,56 @@ File System Solution
 <li>Applications have real time requirements</li>
 <li>Concurrent, multi access to data not required</li>
 </ul>
-<p>Entities</p>
-<p>Attributes</p>
+<p>Contents of a DBMS</p>
+<p>User Data</p>
+<ul>
+<li>tables, relationships</li>
+<li>columns or row db structure</li>
+</ul>
+<p>Meta Data</p>
+<ul>
+<li>How to Describe the data</li>
+<li>System Tables</li>
+<li>Indexes access records without going through entire table</li>
+</ul>
+<p>Applications Metadata</p>
+<ul>
+<li>Storage facility for forms</li>
+</ul>
+<p>Design a Relational Database Model
+Entity relationship model
+Describes</p>
+<ul>
+<li>Entities : class group abstract structure and no value (Object of Interest)</li>
+<li>Attributes (Identifier) : Characteristics of an entity of interest</li>
+<li>Relationships among these entities : Instance - Object with values</li>
+<li>Identifiers : special attribute used to identify a specific instance of an entity - artificial or natural (Created)</li>
+</ul>
+<p>Relationship between two or more entities
+eg employees and companies
+Domain knowledge consider answer in context
+employee multiple companies
+degree of relations how many enities involved in the relationship</p>
+<ul>
+<li>Unary or Recursive - (1)</li>
+<li>Binary (2) - relational db cannot handle</li>
+</ul>
+<p>Cardinality - number of instances involved in the relationship (max cardinality or multiplicity)</p>
+<ul>
+<li>1:n One to many</li>
+<li>N:1 Many to one</li>
+<li>N:M Many to many</li>
+</ul>
+<p>Participation - Manditory or Optional (Optionality or Minimal Cardinatilty)
+or require instance of entity here also there</p>
+<p>Entity Relationship Models</p>
+<p>Based on your understanding so far, what are the entities, attributes, identifiers, and relationships in the Entity Relationship Model? You can lay out the initial outline here, and the owner will meet with you to answer your questions.</p>
+<figure>
+    <img src="/images/dbcourse1.jpg"/> <figcaption>
+            <h4>Entity RelationShip Model</h4>
+        </figcaption>
+</figure>
+
 <h2 id="relational-models">Relational Models</h2>
 <h2 id="normalization">Normalization</h2>
 <h2 id="case-study">Case Study</h2>

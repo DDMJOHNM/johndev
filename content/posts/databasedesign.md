@@ -97,7 +97,7 @@ Entity Relationship Models
 
 Based on your understanding so far, what are the entities, attributes, identifiers, and relationships in the Entity Relationship Model? You can lay out the initial outline here, and the owner will meet with you to answer your questions.
 
-
+{{< figure src="/images/dbcourse1.jpg" title="Entity RelationShip Model Pizza Franchise" >}}
 
 
 
