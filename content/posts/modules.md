@@ -14,3 +14,10 @@ draft: false
 
 - As soon as a request is received for a post or a patch request it will be validated
 using the Laravel request validation  
+
+## Service Providers and Contextual Binding 
+
+Service Provider Bootstraps application
+Registers Dependancies and binds them to the Service Container 
+Depenedancy meets contextual restrictions 
+and it will try to create an instance of that dependency And inject it into the class 

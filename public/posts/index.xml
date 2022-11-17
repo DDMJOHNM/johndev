@@ -79,6 +79,15 @@ Lineage Data Evolves Data will change Data Model In Db and get from git.</descri
     </item>
     
     <item>
+      <title>Grind 75</title>
+      <link>http://johndev.onrender.com/posts/grind75/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/grind75/</guid>
+      <description> two sum solution  func twoSum(nums []int, target int) []int { indices := [][]int{} for i := 0; i &amp;lt; len(nums); i++ { for j := i; j &amp;lt; len(nums); j++ { if nums[i]+nums[j] == target { if i != j { indices = append(indices, []int{i, j}) } } } } fmt.Println(indices)	return indices[0] } two parentheses  </description>
+    </item>
+    
+    <item>
       <title>Modules In EzyVet</title>
       <link>http://johndev.onrender.com/posts/modules/</link>
       <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
