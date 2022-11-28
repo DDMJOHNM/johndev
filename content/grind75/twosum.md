@@ -1,7 +1,7 @@
 ---
-title: "Grind 75"
+title: "Grind 75 -Two Sum"
 date: 2022-10-18T16:56:59+13:00
-draft: false
+draft: true
 ---
 
 1. two sum solution 
@@ -26,7 +26,3 @@ func twoSum(nums []int, target int) []int {
 }
 ```
 
-2. two parentheses
-
-```
-```

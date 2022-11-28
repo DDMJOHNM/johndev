@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JohnDev</title>
-    <link>http://johndev.onrender.com/</link>
-    <description>Recent content on JohnDev</description>
+    <title>Projects on JohnDev</title>
+    <link>http://johndev.onrender.com/projects/</link>
+    <description>Recent content in Projects on JohnDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Oct 2022 16:56:59 +1300</lastBuildDate>
     
-	<atom:link href="http://johndev.onrender.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://johndev.onrender.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

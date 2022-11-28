@@ -12,20 +12,6 @@
     
     
     <item>
-      <title>Database Design</title>
-      <link>http://johndev.onrender.com/posts/databasedesign/</link>
-      <pubDate>Sun, 13 Nov 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/databasedesign/</guid>
-      <description>Entity Relationship Models DBMS
- data information knowledge intelligence (value of data)  From data to actionable insights
-File System Solution
- Separated, isolated data and data duplication Dependancy on applications Incompatible files Lack of data sharing  Database Solution
- A structure that contains data Organise data through entities, attributes, relationships Collection of programs that users interact with a database.  Popular DBMS
- Microsoft Access MySql Progres MongoDb (NoSql)  Advantages</description>
-    </item>
-    
-    <item>
       <title>Kafka</title>
       <link>http://johndev.onrender.com/posts/kafka/</link>
       <pubDate>Sun, 13 Nov 2022 16:56:59 +1300</pubDate>
@@ -40,84 +26,6 @@ Transactionality -&amp;gt; data hygene -&amp;gt; data validation -&amp;gt; dead 
 Exceution
 Security
 Lineage Data Evolves Data will change Data Model In Db and get from git.</description>
-    </item>
-    
-    <item>
-      <title>Clean Code</title>
-      <link>http://johndev.onrender.com/posts/cleancode/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/cleancode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computational Thinking</title>
-      <link>http://johndev.onrender.com/posts/computationalthinking/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/computationalthinking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Critical Thinking</title>
-      <link>http://johndev.onrender.com/posts/criticalthinking/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/criticalthinking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Design Patterns</title>
-      <link>http://johndev.onrender.com/posts/designpatterns/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/designpatterns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grind 75</title>
-      <link>http://johndev.onrender.com/posts/grind75/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/grind75/</guid>
-      <description> two sum solution  func twoSum(nums []int, target int) []int { indices := [][]int{} for i := 0; i &amp;lt; len(nums); i++ { for j := i; j &amp;lt; len(nums); j++ { if nums[i]+nums[j] == target { if i != j { indices = append(indices, []int{i, j}) } } } } fmt.Println(indices)	return indices[0] } two parentheses  </description>
-    </item>
-    
-    <item>
-      <title>Modules In EzyVet</title>
-      <link>http://johndev.onrender.com/posts/modules/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/modules/</guid>
-      <description>Data Transfer Objects  Used for storing data and passing data between systems  Entities  Represents a piece of a data that can be stored in the database  Request -&amp;gt; DTO Mapping  As soon as a request is received for a post or a patch request it will be validated using the Laravel request validation  Service Providers and Contextual Binding Service Provider Bootstraps application Registers Dependancies and binds them to the Service Container Depenedancy meets contextual restrictions and it will try to create an instance of that dependency And inject it into the class</description>
-    </item>
-    
-    <item>
-      <title>OWASP</title>
-      <link>http://johndev.onrender.com/posts/owasp/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/owasp/</guid>
-      <description>Insecure Design Vulneratbilties that originate from design or architecture flaws.
-Risks existing design of a system can result in vulnerabilites when system is implemented.
-Shift Security Left - think about security principles during pre code activities.
-eg server side security eali exploited broken object level authorization vulnerability.</description>
-    </item>
-    
-    <item>
-      <title>The Solid Principles Of OOP Design</title>
-      <link>http://johndev.onrender.com/posts/solid/</link>
-      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
-      
-      <guid>http://johndev.onrender.com/posts/solid/</guid>
-      <description>Single Responsibility Principle (SRP) A class should only have one and only one reason to change.
-Open-Closed Principle Objects or entities should be open for extension but closed for modification.
-This means that a class should be extendable without modifying the class itself.
-Liskov Substitution Principle Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.</description>
     </item>
     
   </channel>

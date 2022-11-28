@@ -1,7 +1,7 @@
 ---
 title: "Kafka"
 date: 2022-11-13T16:56:59+13:00
-draft: false
+draft: true
 ---
 
 # Journey to Event Driven Programming 
@@ -60,6 +60,7 @@ Volatility of Data
 
 Event First Pattern
 Distributed to everyone cares about
+
 Micro Service 
 Sharding data and copy across brokers
 Replicate data accross nodes
