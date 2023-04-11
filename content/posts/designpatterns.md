@@ -4,69 +4,101 @@ date: 2022-10-18T16:56:59+13:00
 draft: true
 ---
 
-## Keeping your objects in the know 
-take the parts that vary and encapsulate them 
-so you can later alter or extend the part that vary without 
-affecting those that dont.
+Load your brain with design patterns and then recognise them in your designs and 
+existing applications where you can apply them instead of code reuse you get experience resuse.
 
-eg duck class with flying and quacking interfaces.
+Disadvantages of using inheritance to provide the duck behavior 
+-Runtimne changes are differcult to make 
+-Changes can effect other ducks 
 
-Polmorphic types
-abstract class animal 
-two concrete implementations do and cat.
+Inheritance for the purpose of reuse has not turned out so well for maintainance.
 
-assign cmncerete implementation object at run time.
-Animal animal = new Dog()
-animal .makeSound();
+-One constant in software design is change 
 
-a = getAnimal();
-a.makeSound();
+Design Principles 
+Identify aspects of your application that vary and seperate them from what stays the same.
+Encapulsation - this will give fewer unintended consequences from code changes.
 
-duck class
-Intefaces fly and quck behavior -
+All patterns provide a way to let some part of the system vary independendently from all the rest.
 
-add new behaviors without touching any of the duck classes that use flying behaviors 
-duck now delegates flying and quacking behavior.
+Duck class (Pull out what varies)
+Duck subclass will use a behavior represented by an inteface.  
+Flying Behaviors
+Quacking Behaviors 
+(Duck Behaviors) 
+include behavior setters to chnage the behavior of the duck dynamically. (At runtime)
 
-add instance variables (interfaces) we instanciate the behavior class
-delegate interface behavior to the the behavior class 
+Implementation 
+
+```
+inteface flybehavior 
+fly()
+
+class flyWithWings
+fly(){//implements duck flying}
+
+class FlyNoWay
+fly(){//do nothing cant fly} 
+
+all flying classes implement flybehavior interface 
+all new flying classes just need to implement the fly method.
+
+interface QuckBehavior
+quack()
+
+class Quack
+quack(){implenments duck quacking}
+
+class Squeek 
+quack(){//rubber duck squeek}
+
+class MuteQuack
+quack(){//do nothing can't quack}
+
+
+```
+All objects can reuse fly and quack behaviors as they are no longer hidden away in the duck classes.
+Add new behaviors without modifying and of the existing behavior or touching any of the duck clsses that use flying behviors.
+
+Duck now delegates its flying and Quacking behavior.
 
 ```
 
-public class MiniDuckSimulator {
-    public static void method main(Stirng[], args){
-        Duck mallard = new MallardDuck();
-        mallard.performQuck();
-        mallerd.performFly();
+Duck 
+FlyBehavior flyBehavior (instance variable)
+QuackBehavior quackBehavior  
 
+performQuack()
+swim()
+display()
+performFly()
+
+public class Duck {
+    QuackBehavior quackBehavior; 
+
+    public void performQuack(){
+        quackBehavior.quack(); 
     } 
-}
 
-calls mallard duck inherited performQuck method which then delegates
-to the objects quak behavior ie calls quack on the ducks inherited quack beahvior reference  
 
-set and get behavior on duck subclass ratgher than inheriting through the duck constructor
-call these methods anytiime you want to chnage the behavior 
+} 
 
-Duck model = new ModeklDuck();
+We don't care what kind of object it is we just care if it can quack.
 
-model.setFlyBehavior(new FlyRocketPowered());
+```
 
-encapsulated behaviors
-is a and has a and implements
-each set of behaviors as an encapsulated family of alogrithms
+Look at how the fly and quack variables are set.
 
-the has a relationship each duck has a fly beavior and quack behavuior to which it dlegates flying and quacking
-composition instead of inheriting their behavior ducks get their behavior form being composde of the right objects.
+page 16 
 
-FAVOUR COMPOSITION OVER INHERITANCE
-
-Strategy Design Pattern 
-defines a family of algoritms, encapuslates each one, and makes them integchangeable
-Strategy letes algorithms vay independently from the cleints that use it. 
+```
 
 
 ```
+
+
+
+
 
 
 
