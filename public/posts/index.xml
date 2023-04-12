@@ -6,26 +6,28 @@
     <description>Recent content in Posts on JohnDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Nov 2022 16:56:59 +1300</lastBuildDate>
+    <lastBuildDate>Thu, 06 Apr 2023 16:56:59 +1300</lastBuildDate>
     
 	<atom:link href="http://johndev.onrender.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Kafka</title>
-      <link>http://johndev.onrender.com/posts/kafka/</link>
-      <pubDate>Sun, 13 Nov 2022 16:56:59 +1300</pubDate>
+      <title>Hands On Arcitecture</title>
+      <link>http://johndev.onrender.com/posts/hands_on_architecture/</link>
+      <pubDate>Thu, 06 Apr 2023 16:56:59 +1300</pubDate>
       
-      <guid>http://johndev.onrender.com/posts/kafka/</guid>
-      <description>Journey to Event Driven Programming Neil Avery Blog Karl Waegner
-api to event driven architecture Event Atomic Relates to strean of events Have behavior in ecosystem
-Consideration In Event Driven Design
-Domain Driven Design
-never overwrite old data -&amp;gt; create current state
-Transactionality -&amp;gt; data hygene -&amp;gt; data validation -&amp;gt; dead letter queue (Schema Registry) db table insert fail -&amp;gt; data model
-Exceution
-Security
-Lineage Data Evolves Data will change Data Model In Db and get from git.</description>
+      <guid>http://johndev.onrender.com/posts/hands_on_architecture/</guid>
+      <description>Hands on Architecture Role Of the Architect  Define a blueprint  Requirements Clarification  Top level functional and non functional requirements (system qualities)  True North  Engineering Principles for the system High level design (Decomposition of system into components) Quality Attributes Product Velocity (cicd) a/b testing - every feature has a flag  Technology Selection Leadership (Steering and asking tough questions at design meetings)
+Coaching and Mentoring Developers  Outside of their normal deliverables  Target State vs Current State  mvp next bite sized chunks after that  Software Architecture vs Design  High Level Structure Low Level Implementatiion Details  What does Architecture look like?</description>
+    </item>
+    
+    <item>
+      <title>Data Structures And Algorithms Book</title>
+      <link>http://johndev.onrender.com/posts/data_structures_algorithms/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/data_structures_algorithms/</guid>
+      <description></description>
     </item>
     
   </channel>

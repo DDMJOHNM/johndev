@@ -120,4 +120,56 @@ In a concurrent system garbage collection is a must have feature
 ## Object Orientation
 
 Go way is composition over inheritance
-For Polymorphic Behavior Go uses interfaces and duck typing.  
+For Polymorphic Behavior Go uses interfaces and duck typing.
+
+## Pacakging Code 
+encapsulation—packaging code into a higher level of abstractions
+- Object orientation in go
+- Code layout of packages, dependencies
+
+### Contracts key aspect of module design  
+Formalized Documentation documenetation of an interaction with a software component.
+(Durable, Versioned, Service Level Agreements)
+
+## Object Orientation in Go
+- Class is a blueprint or template for objects
+- Functions invoke behavior
+- Encapsulation - implies exposing a contract (inteface) for the behavior of objects and hides implementation details. (Private attributes and methods)
+
+- Inheritance (is-a relationship) can lead to a hieraechy of classes that can be hard to debug.
+
+```
+This ability of an interface method to behave differently based on the actual object is called polymorphism (derived classes <- Super class)
+
+An alternative to inheritance is to delegate behavior, also called composition has-a relationship
+
+Classes implement an interface—which is the contract the base class offers.
+Functionality reuse happens through having references to objects, rather than
+deriving from classes.
+
+Golang favours composition over inheritance.
+```
+---
+* THe Struct - equivelent container for encapsulation.
+Methods hava a receiver clause (Method Set)
+* pointer receiver - pass by refernce 
+- non - pointer receiver pass by reference 
+- slices and maps act as a reference pass them as a value will allow mutation of the objects.
+
+* Visibility - struct field with a lowercase letter is private.
+  (Public struct field code outside package can reference.) 
+* The Interface - Interface construct key to polymorhism in go 
+Objects that implement all the interface methods
+automatically implement the interface.
+
+* Embedding - is a mechanism to allow the ability to borrow pieces from different classes.
+Let's call Base , struct embedded into a Derived struct.
+---
+
+This may feel like inheritance, but embedding does not provide polymorphism. Embedding
+differs from subclassing in an important way: when a type is embedded, the methods of
+that type are available as methods of the outer type; however, for invocation of the
+embedded struct methods, the receiver of the method must be the inner (embedded)
+type, not the outer one
+(Can also be done on interfaces)
+multiple inheritences -deadly diamond of death

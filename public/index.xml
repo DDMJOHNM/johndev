@@ -6,10 +6,29 @@
     <description>Recent content on JohnDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Oct 2022 16:56:59 +1300</lastBuildDate>
+    <lastBuildDate>Thu, 06 Apr 2023 16:56:59 +1300</lastBuildDate>
     
 	<atom:link href="http://johndev.onrender.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hands On Arcitecture</title>
+      <link>http://johndev.onrender.com/posts/hands_on_architecture/</link>
+      <pubDate>Thu, 06 Apr 2023 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/hands_on_architecture/</guid>
+      <description>Hands on Architecture Role Of the Architect  Define a blueprint  Requirements Clarification  Top level functional and non functional requirements (system qualities)  True North  Engineering Principles for the system High level design (Decomposition of system into components) Quality Attributes Product Velocity (cicd) a/b testing - every feature has a flag  Technology Selection Leadership (Steering and asking tough questions at design meetings)
+Coaching and Mentoring Developers  Outside of their normal deliverables  Target State vs Current State  mvp next bite sized chunks after that  Software Architecture vs Design  High Level Structure Low Level Implementatiion Details  What does Architecture look like?</description>
+    </item>
+    
+    <item>
+      <title>Data Structures And Algorithms Book</title>
+      <link>http://johndev.onrender.com/posts/data_structures_algorithms/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/posts/data_structures_algorithms/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Kaftka Go</title>
@@ -26,6 +45,15 @@
       <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
       
       <guid>http://johndev.onrender.com/projects/laraval_react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust Development</title>
+      <link>http://johndev.onrender.com/projects/rust_aws/</link>
+      <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
+      
+      <guid>http://johndev.onrender.com/projects/rust_aws/</guid>
       <description></description>
     </item>
     
