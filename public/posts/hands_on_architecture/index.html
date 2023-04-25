@@ -140,6 +140,16 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#framework-refactor-code-into-a-framework-package">framework refactor code into a framework package</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#design-patterns">Design Patterns</a></li>
+    <li><a href="#solid">Solid</a>
+      <ul>
+        <li><a href="#single-responsibility-principle">Single Responsibility Principle</a></li>
+        <li><a href="#open-closed-principle">Open Closed Principle</a></li>
+        <li><a href="#liskov-substitution-principle">Liskov Substitution Principle</a></li>
+        <li><a href="#inteface-segregation-principle">Inteface Segregation Principle</a></li>
+        <li><a href="#dependency-inversion-principle">Dependency Inversion Principle</a></li>
+      </ul>
+    </li>
+    <li><a href="#creational-design-patterns">Creational Design Patterns</a></li>
   </ul>
 </nav>
 
@@ -374,6 +384,42 @@ structuring tests
 <p>good packaging is necessary because it its eanables code changes to happen
 faster with less risk, also leads to fewer bugs in production</p>
 <h2 id="design-patterns">Design Patterns</h2>
+<p>Solutions To reoccrurring problems (tmeplates)
+basic design principles that form guidelines for all patterns
+Repsonsibilility Assignment
+Dependency Management - contract between classes</p>
+<p>Five princilples of good class design (Uncle bob)</p>
+<h2 id="solid">Solid</h2>
+<h3 id="single-responsibility-principle">Single Responsibility Principle</h3>
+<p>One class should only have and and only one resposibility</p>
+<ul>
+<li>when new requirements arise refactor code to to stay true to guidelines
+-extraneous coupling not introduced</li>
+</ul>
+<h3 id="open-closed-principle">Open Closed Principle</h3>
+<p>You should be able to extend a classes behavior without modifying it
+Open for extension closed for modification
+Override class behavior without modifying code</p>
+<h3 id="liskov-substitution-principle">Liskov Substitution Principle</h3>
+<p>Derived Classes Must be Substitable for its base types
+Derived Classes must be usable through their base classes interface
+without the need for the client to know about the base class.</p>
+<p>THe interface should be able to suffice for all structs that implement the inteface.</p>
+<h3 id="inteface-segregation-principle">Inteface Segregation Principle</h3>
+<p>Many client specfic interfaces are better than one general purpose interface.
+Base classes becoming a collect all behavior.
+Interface for each type of client
+derived classes have to implement methods that dont make sense to them.</p>
+<h3 id="dependency-inversion-principle">Dependency Inversion Principle</h3>
+<p>higher levels modules depend on abstarctions not concretions.</p>
+<p>go</p>
+<ul>
+<li>every package should have interfaces that advertise fucntionality without implementation specifics</li>
+<li>when a package needs a dependancy it should take that depenedancy as a parameter</li>
+</ul>
+<h2 id="creational-design-patterns">Creational Design Patterns</h2>
+<p>Patterns that deal with object creation mechanisms
+Code does not need to know details about how the object is created</p>
 </article>
  
       
@@ -448,6 +494,16 @@ select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText
     <li><a href="#framework-refactor-code-into-a-framework-package">framework refactor code into a framework package</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#design-patterns">Design Patterns</a></li>
+    <li><a href="#solid">Solid</a>
+      <ul>
+        <li><a href="#single-responsibility-principle">Single Responsibility Principle</a></li>
+        <li><a href="#open-closed-principle">Open Closed Principle</a></li>
+        <li><a href="#liskov-substitution-principle">Liskov Substitution Principle</a></li>
+        <li><a href="#inteface-segregation-principle">Inteface Segregation Principle</a></li>
+        <li><a href="#dependency-inversion-principle">Dependency Inversion Principle</a></li>
+      </ul>
+    </li>
+    <li><a href="#creational-design-patterns">Creational Design Patterns</a></li>
   </ul>
 </nav>
 

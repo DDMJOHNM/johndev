@@ -204,4 +204,55 @@ good packaging is necessary because it its eanables code changes to happen
 faster with less risk, also leads to fewer bugs in production
 
 ## Design Patterns
+Solutions To reoccrurring problems (tmeplates)
+basic design principles that form guidelines for all patterns
+Repsonsibilility Assignment
+Dependency Management - contract between classes 
+
+Five princilples of good class design (Uncle bob)
+## Solid 
+
+### Single Responsibility Principle
+One class should only have and and only one resposibility 
+- when new requirements arise refactor code to to stay true to guidelines
+-extraneous coupling not introduced
+
+### Open Closed Principle
+You should be able to extend a classes behavior without modifying it
+Open for extension closed for modification
+Override class behavior without modifying code
+
+### Liskov Substitution Principle 
+Derived Classes Must be Substitable for its base types 
+Derived Classes must be usable through their base classes interface 
+without the need for the client to know about the base class.
+
+THe interface should be able to suffice for all structs that implement the inteface.
+
+### Inteface Segregation Principle 
+Many client specfic interfaces are better than one general purpose interface.
+Base classes becoming a collect all behavior.
+Interface for each type of client 
+derived classes have to implement methods that dont make sense to them.
+
+### Dependency Inversion Principle 
+higher levels modules depend on abstarctions not concretions.
+
+go 
+- every package should have interfaces that advertise fucntionality without implementation specifics
+- when a package needs a dependancy it should take that depenedancy as a parameter
+
+## Creational Design Patterns 
+Patterns that deal with object creation mechanisms
+Code does not need to know details about how the object is created 
+
+
+
+
+
+
+
+
+
+
 
