@@ -1,125 +1,173 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Hands On Arcitecture | JohnDev</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Hands on Architecture Role Of the Architect  Define a blueprint  Requirements Clarification  Top level functional and non functional requirements (system qualities)  True North  Engineering Principles for the system High level design (Decomposition of system into components) Quality Attributes Product Velocity (cicd) a/b testing - every feature has a flag  Technology Selection Leadership (Steering and asking tough questions at design meetings)
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hands on Architecture Role Of the Architect  Define a blueprint  Requirements Clarification  Top level functional and non functional requirements (system qualities)  True North  Engineering Principles for the system High level design (Decomposition of system into components) Quality Attributes Product Velocity (cicd) a/b testing - every feature has a flag  Technology Selection Leadership (Steering and asking tough questions at design meetings)
 Coaching and Mentoring Developers  Outside of their normal deliverables  Target State vs Current State  mvp next bite sized chunks after that  Software Architecture vs Design  High Level Structure Low Level Implementatiion Details  What does Architecture look like?">
-    <meta name="generator" content="Hugo 0.68.3" />
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-
-    
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
-
-
-
-    
-    
-    
-      
-
-    
-
-    
-    
-    <meta property="og:title" content="Hands On Arcitecture" />
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Hands On Arcitecture" />
 <meta property="og:description" content="Hands on Architecture Role Of the Architect  Define a blueprint  Requirements Clarification  Top level functional and non functional requirements (system qualities)  True North  Engineering Principles for the system High level design (Decomposition of system into components) Quality Attributes Product Velocity (cicd) a/b testing - every feature has a flag  Technology Selection Leadership (Steering and asking tough questions at design meetings)
 Coaching and Mentoring Developers  Outside of their normal deliverables  Target State vs Current State  mvp next bite sized chunks after that  Software Architecture vs Design  High Level Structure Low Level Implementatiion Details  What does Architecture look like?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://johndev.onrender.com/posts/hands_on_architecture/" />
 <meta property="article:published_time" content="2023-04-06T16:56:59+13:00" />
 <meta property="article:modified_time" content="2023-04-06T16:56:59+13:00" />
-<meta itemprop="name" content="Hands On Arcitecture">
-<meta itemprop="description" content="Hands on Architecture Role Of the Architect  Define a blueprint  Requirements Clarification  Top level functional and non functional requirements (system qualities)  True North  Engineering Principles for the system High level design (Decomposition of system into components) Quality Attributes Product Velocity (cicd) a/b testing - every feature has a flag  Technology Selection Leadership (Steering and asking tough questions at design meetings)
-Coaching and Mentoring Developers  Outside of their normal deliverables  Target State vs Current State  mvp next bite sized chunks after that  Software Architecture vs Design  High Level Structure Low Level Implementatiion Details  What does Architecture look like?">
-<meta itemprop="datePublished" content="2023-04-06T16:56:59&#43;13:00" />
-<meta itemprop="dateModified" content="2023-04-06T16:56:59&#43;13:00" />
-<meta itemprop="wordCount" content="752">
-
-
-
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hands On Arcitecture"/>
-<meta name="twitter:description" content="Hands on Architecture Role Of the Architect  Define a blueprint  Requirements Clarification  Top level functional and non functional requirements (system qualities)  True North  Engineering Principles for the system High level design (Decomposition of system into components) Quality Attributes Product Velocity (cicd) a/b testing - every feature has a flag  Technology Selection Leadership (Steering and asking tough questions at design meetings)
-Coaching and Mentoring Developers  Outside of their normal deliverables  Target State vs Current State  mvp next bite sized chunks after that  Software Architecture vs Design  High Level Structure Low Level Implementatiion Details  What does Architecture look like?"/>
-
-	
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
-
-    
-   
-   <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        JohnDev
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      
-<div class="ananke-socials">
+<title>Hands On Arcitecture | JohnDev</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.7c92ceee66c6db521c0948767411cba54a79ac05e93a75c63bab418790687d88.css" integrity="sha256-fJLO7mbG21IcCUh2dBHLpUp5rAXpOnXGO6tBh5BofYg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.6c16a51877b5a90426dc723c4efbb064e11b44d5d8a0ec860b4126595ea48bc9.js" integrity="sha256-bBalGHe1qQQm3HI8TvuwZOEbRNXYoOyGC0EmWV6ki8k=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
   
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>JohnDev</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
 
-    </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </nav>
 
-    </div>
- </header> 
-
-
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked">
-          
-        POSTS
-      </aside>
-      
 
 
 
+  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
 
 
+ 
+      </div>
+    </aside>
 
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
 
+  <strong>Hands On Arcitecture</strong>
 
-
-
-  <div id="sharing" class="mt3 ananke-socials">
+  <label for="toc-control">
     
-  </div>
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Hands On Arcitecture</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2023-04-06T16:56:59+13:00">April 6, 2023</time>
-      
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#role-of-the-architect">Role Of the Architect</a></li>
+    <li><a href="#requirements-clarification">Requirements Clarification</a></li>
+    <li><a href="#true-north">True North</a></li>
+    <li><a href="#technology-selection">Technology Selection</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#coaching-and-mentoring-developers">Coaching and Mentoring Developers</a></li>
+    <li><a href="#target-state-vs-current-state">Target State vs Current State</a></li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#architecture-vs-design">Architecture vs Design</a></li>
+    <li><a href="#what-does-architecture-look-like">What does Architecture look like?</a>
+      <ul>
+        <li><a href="#see-robert-martin-concentric-circles">See Robert Martin Concentric Circles</a></li>
+      </ul>
+    </li>
+    <li><a href="#main-architectural-paradigms-that-are-commonly-used">Main Architectural Paradigms that are commonly used.</a></li>
+    <li><a href="#microservices">Microservices</a></li>
+    <li><a href="#challenges-for-microservices">Challenges for Microservices</a></li>
+    <li><a href="#golang-to-solve-these-challenges">Golang to solve these challenges</a></li>
+    <li><a href="#concurrency">Concurrency</a></li>
+    <li><a href="#garbage-collection">Garbage Collection</a></li>
+    <li><a href="#object-orientation">Object Orientation</a></li>
+    <li><a href="#pacakging-code">Pacakging Code</a>
+      <ul>
+        <li><a href="#contracts-key-aspect-of-module-design">Contracts key aspect of module design</a></li>
+      </ul>
+    </li>
+    <li><a href="#object-orientation-in-go">Object Orientation in Go</a></li>
+    <li><a href="#code-layout">Code Layout</a></li>
+    <li><a href="#framework-refactor-code-into-a-framework-package">framework refactor code into a framework package</a></li>
+    <li><a href="#testing">Testing</a></li>
+    <li><a href="#design-patterns">Design Patterns</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
 
       
       
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="hands-on-architecture">Hands on Architecture</h1>
+<article class="markdown">
+  <h1>
+    <a href="/posts/hands_on_architecture/">Hands On Arcitecture</a>
+  </h1>
+  
+  <h5>April 6, 2023</h5>
+
+
+
+  
+
+  
+
+
+
+<h1 id="hands-on-architecture">Hands on Architecture</h1>
 <h2 id="role-of-the-architect">Role Of the Architect</h2>
 <ul>
 <li>Define a blueprint</li>
@@ -301,37 +349,127 @@ embedded struct methods, the receiver of the method must be the inner (embedded)
 type, not the outer one
 (Can also be done on interfaces)
 multiple inheritences -deadly diamond of death</p>
-<ul class="pa0">
+<h2 id="code-layout">Code Layout</h2>
+<p>bin
+pkg
+<!-- raw HTML omitted -->
+vendor
+Makefile
+scripts
+Main driver - main files that drive components and control the life cycle of top level objects
+tests
+src
+github.com</p>
+<p>use makefile to stage vendor code before checking into parent repository
+takes a snap shot of the dependancies and cehcks them into a vendor folder</p>
+<h2 id="framework-refactor-code-into-a-framework-package">framework refactor code into a framework package</h2>
+<p>auth, logger, config helper classes</p>
+<h2 id="testing">Testing</h2>
+<p>code business logic is iolated from depenadncies such as external services.
+go mock
+test packages independently
+structuring tests
+-table driven test (DRY)
+-sub tests can be run in parallel</p>
+<p>good packaging is necessary because it its eanables code changes to happen
+faster with less risk, also leads to fewer bugs in production</p>
+<h2 id="design-patterns">Design Patterns</h2>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){if(window.getSelection().toString()){return;}
+select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
+
+
+ 
+        
+      </footer>
+
+      
   
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://johndev.onrender.com/" >
-    &copy;  JohnDev 2023 
-  </a>
-    <div>
-<div class="ananke-socials">
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
   
-</div>
-</div>
-  </div>
-</footer>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#role-of-the-architect">Role Of the Architect</a></li>
+    <li><a href="#requirements-clarification">Requirements Clarification</a></li>
+    <li><a href="#true-north">True North</a></li>
+    <li><a href="#technology-selection">Technology Selection</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#coaching-and-mentoring-developers">Coaching and Mentoring Developers</a></li>
+    <li><a href="#target-state-vs-current-state">Target State vs Current State</a></li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#architecture-vs-design">Architecture vs Design</a></li>
+    <li><a href="#what-does-architecture-look-like">What does Architecture look like?</a>
+      <ul>
+        <li><a href="#see-robert-martin-concentric-circles">See Robert Martin Concentric Circles</a></li>
+      </ul>
+    </li>
+    <li><a href="#main-architectural-paradigms-that-are-commonly-used">Main Architectural Paradigms that are commonly used.</a></li>
+    <li><a href="#microservices">Microservices</a></li>
+    <li><a href="#challenges-for-microservices">Challenges for Microservices</a></li>
+    <li><a href="#golang-to-solve-these-challenges">Golang to solve these challenges</a></li>
+    <li><a href="#concurrency">Concurrency</a></li>
+    <li><a href="#garbage-collection">Garbage Collection</a></li>
+    <li><a href="#object-orientation">Object Orientation</a></li>
+    <li><a href="#pacakging-code">Pacakging Code</a>
+      <ul>
+        <li><a href="#contracts-key-aspect-of-module-design">Contracts key aspect of module design</a></li>
+      </ul>
+    </li>
+    <li><a href="#object-orientation-in-go">Object Orientation in Go</a></li>
+    <li><a href="#code-layout">Code Layout</a></li>
+    <li><a href="#framework-refactor-code-into-a-framework-package">framework refactor code into a framework package</a></li>
+    <li><a href="#testing">Testing</a></li>
+    <li><a href="#design-patterns">Design Patterns</a></li>
+  </ul>
+</nav>
 
-  </body>
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

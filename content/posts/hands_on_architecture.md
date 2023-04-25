@@ -173,3 +173,35 @@ embedded struct methods, the receiver of the method must be the inner (embedded)
 type, not the outer one
 (Can also be done on interfaces)
 multiple inheritences -deadly diamond of death
+
+## Code Layout 
+bin
+pkg
+<package>
+vendor
+Makefile
+scripts
+Main driver - main files that drive components and control the life cycle of top level objects 
+tests
+src 
+github.com
+
+use makefile to stage vendor code before checking into parent repository
+takes a snap shot of the dependancies and cehcks them into a vendor folder
+
+## framework refactor code into a framework package
+auth, logger, config helper classes 
+
+## Testing 
+code business logic is iolated from depenadncies such as external services. 
+go mock
+test packages independently
+structuring tests 
+-table driven test (DRY)
+-sub tests can be run in parallel
+
+good packaging is necessary because it its eanables code changes to happen 
+faster with less risk, also leads to fewer bugs in production
+
+## Design Patterns
+

@@ -27,7 +27,13 @@ Coaching and Mentoring Developers  Outside of their normal deliverables  Target 
       <pubDate>Tue, 18 Oct 2022 16:56:59 +1300</pubDate>
       
       <guid>http://johndev.onrender.com/posts/data_structures_algorithms/</guid>
-      <description></description>
+      <description>Classification of data structures and design patterns data structure - organization of data in a computers memory
+Datatypes within a data structure
+(Heterogenous)
+ Linked List. Ordered List. Unordered List.  (Homogenous) Two dimensional arrays, multidimensional arrays
+(Dynamic)
+ dictionaries tree sets sequences  Linear Data Structures
+ lists  package main import( &amp;quot;fmt&amp;quot; &amp;quot;container/list&amp;quot; ) func main(){ var inList list.list intList.pushBack(11) intList.pushBack(23) intList.pushBack(34) for element := intList.Front(); element != nil; element = element.</description>
     </item>
     
   </channel>
