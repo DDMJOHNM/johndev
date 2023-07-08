@@ -245,7 +245,29 @@ go
 ## Creational Design Patterns 
 Patterns that deal with object creation mechanisms
 Code does not need to know details about how the object is created 
+as long as the object adheres to the interface expected 
 
+### Factory Method 
+Factory is an object used to create other objects 
+
+helper function or method  
+
+```
+func NewReservation(vertical, reservationDate string) Reservation {
+  switch(vertical) {
+    case "flight":
+      return FlightReservationImpl{reservationDate,}
+    case "hotel":
+      return HotelReservationImpl{reservationDate,}
+    default:
+      return nil
+  }
+}
+```
+### Builder Method 
+Create Different Flavours of an object while enforcing constraints 
+ 
+## Abstract Factory
 
 
 
